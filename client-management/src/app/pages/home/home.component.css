@@ -1,0 +1,17 @@
+#section-home {
+    width: 100%;
+    height: calc(100vh - 76px);
+    display: flex;
+}
+
+app-sidebar {
+    width: 20%;
+    height: 100%;
+    overflow: auto;
+}
+
+app-layout {
+    width: 80%;
+    height: 100%;
+    overflow: auto;
+}

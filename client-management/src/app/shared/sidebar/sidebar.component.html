@@ -1,0 +1,23 @@
+<section id="section-sidebar">
+    <ul class="list-group" id="accordionPanelsStayOpenExample">
+        <li class="list-group-item" (click)="viewProfiles()">Profiles</li>
+        <li class="list-group-item" (click)="viewClients()">Clients</li>
+        <li class="list-group-item maintainers">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                Maintainers
+            </button>
+            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                <div class="accordion-body">
+                    <li class="list-group-item" (click)="viewCreateClient()">Create Client</li>
+                </div>
+                <div class="accordion-body">
+                    <li class="list-group-item" (click)="viewEditClient()">Edit Client</li>
+                </div>
+                <div class="accordion-body">
+                    <li class="list-group-item" (click)="viewDeleteClient()">Delete Client</li>
+                </div>
+            </div>
+        </li>
+        <li class="list-group-item">Information</li>
+    </ul>
+</section>

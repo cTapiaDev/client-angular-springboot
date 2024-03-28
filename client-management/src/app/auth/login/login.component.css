@@ -1,0 +1,26 @@
+form {
+    width: 60%;
+}
+
+/* ID's */
+#section-login {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+#section-login article:first-child {
+    width: 70%;
+    height: 100%;
+    background: url('../../../assets/images/login-image.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+#section-login article:last-child {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

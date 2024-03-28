@@ -1,0 +1,8 @@
+#section-clients {
+    overflow: auto;
+}
+
+thead tr th {
+    background-color: #4d2c29;
+    color: #b5754a;
+}

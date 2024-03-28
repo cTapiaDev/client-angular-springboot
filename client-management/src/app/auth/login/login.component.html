@@ -1,0 +1,40 @@
+<section id="section-login">
+  <article></article>
+  <article>
+    <form [formGroup]="loginForm">
+        <p class="text-danger">{{loginError}}</p>
+      <div class="mb-3">
+        <label for="exampleInputUsername" class="form-label">Username</label>
+        <input
+          formControlName="username"
+          type="text"
+          class="form-control"
+          id="exampleInputUsername"
+          aria-describedby="usernameHelp"
+        />
+        @if (username.invalid && (username.dirty || username.touched)) {
+            <div class="text-danger">
+                @if (username.errors?.['required']) {
+                    <div>Username is required</div>
+                }
+                @if (username.errors?.['username']) {
+                    <div>Username must be in a valid format</div>
+                }
+            </div>
+        }
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Password</label>
+        <input formControlName="password" type="password" class="form-control" id="exampleInputPassword1" />
+        @if (password.invalid && (password.dirty || password.touched)) {
+            <div class="text-danger">
+                @if (password.errors?.['required']) {
+                    <div>Password is required</div>
+                }
+            </div>
+        }
+      </div>
+      <button type="submit" class="btn btn-primary" (click)="login()">Login</button>
+    </form>
+  </article>
+</section>

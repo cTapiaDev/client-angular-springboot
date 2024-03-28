@@ -1,0 +1,13 @@
+<section id="section-layout">
+    @if (viewClients) {
+        <app-clients></app-clients>
+    } @else if (viewProfiles) {
+        <app-profiles></app-profiles>
+    } @else if (viewCreateClient) {
+        <app-create></app-create>
+    } @else if (viewEditClient) {
+        <app-edit></app-edit>
+    } @else if (viewDeleteClient) {
+        <app-delete></app-delete>
+    }
+</section>

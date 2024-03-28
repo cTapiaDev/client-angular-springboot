@@ -1,0 +1,20 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #d1a38a;
+}
+
+section {
+    background-color: #d1a38a;
+    color: #261214;
+    overflow: auto;
+}
+
+.ng-valid:not(form).ng-touched {
+    border-left: 5px solid #42A948;
+}
+
+.ng-invalid:not(form).ng-touched {
+    border-left: 5px solid #A94442;
+}
